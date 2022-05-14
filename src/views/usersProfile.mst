@@ -1,0 +1,18 @@
+
+{{>header}}
+<br>
+<br>
+{{#pageTitle}}
+<title>{{pageTitle}}</title>
+{{/pageTitle}}
+{{^pageTitle}}
+<title>{{h.defaultPageTitle}}</title>
+{{/pageTitle}}
+</head>
+<div class ="user-profile">
+{{#users}}
+<a href="/admin/profileEdit/{{name}}/{{email}}/{{id}}"><li> {{name}},{{email}} </li></a>
+
+
+{{/users}}
+ </div>
